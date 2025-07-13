@@ -53,7 +53,7 @@ h1 {
 .square {
     position: absolute;
     background-color: white; 
-    background-image: url(../imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg);
+    background-image: url(./imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg);
     background-size: 300px 300px;
     background-repeat: no-repeat;
 }
