@@ -11,37 +11,36 @@ body {
 }
 
 .container {
-  background-color: #fff; /* Fundo branco para o contêiner central */
+  background-color: #fff; 
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  z-index: 1; /* Garante que o conteúdo principal esteja acima dos quadrados */
+  z-index: 1; 
   position: relative; 
 }
 
 h1 {
-  color: #4CAF50; /* Cor verde para o título */
+  color: #4CAF50; 
   margin-bottom: 30px;
 }
 
 #startGame {
-  background-color: #4CAF50; /* Cor verde para o botão */
+  background-color: #4CAF50; 
   color: white;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
   cursor: pointer;
-  /* transition: background-color 0.3s ease; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #startGame:hover {
-  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  background-color: #45a049; 
 }
 
-/* Estilos para os quadrados estáticos de fundo */
 .static-squares {
     position: absolute;
     top: 0;
@@ -53,13 +52,12 @@ h1 {
 
 .square {
     position: absolute;
-    background-color: white; /* Cor preta para os quadrados */
-    background-image: url(/imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg);
+    background-color: white; 
+    background-image: url(imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg);
     background-size: 300px 300px;
     background-repeat: no-repeat;
 }
 
-/* Posições, tamanhos e rotações variados para os quadrados estáticos, baseados na imagem */
 .static-squares .s1 { width: 100px; height: 100px; top: 7%; left: 10%; transform: rotate(20deg); background-position: 0 0; }
 .static-squares .s2 { width: 100px; height: 100px; top: 30%; left: 80%; transform: rotate(-26deg); background-position: -200px 0; }
 .static-squares .s3 { width: 100px; height: 100px; top: 5%; left: 40%; transform: rotate(20deg); background-position: -100px 0; }
