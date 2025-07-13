@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  margin: 0;
+  background-color: lightblue;
+  color: #333;
+  overflow: hidden; 
+}
+
+.container {
+  background-color: #fff; /* Fundo branco para o contêiner central */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  z-index: 1; /* Garante que o conteúdo principal esteja acima dos quadrados */
+  position: relative; 
+}
+
+h1 {
+  color: #4CAF50; /* Cor verde para o título */
+  margin-bottom: 30px;
+}
+
+#startGame {
+  background-color: #4CAF50; /* Cor verde para o botão */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+}
+
+#startGame:hover {
+  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para os quadrados estáticos de fundo */
+.static-squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.square {
+    position: absolute;
+    background-color: white; /* Cor preta para os quadrados */
+    background-image: url(/imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+
+/* Posições, tamanhos e rotações variados para os quadrados estáticos, baseados na imagem */
+.static-squares .s1 { width: 100px; height: 100px; top: 7%; left: 10%; transform: rotate(20deg); background-position: 0 0; }
+.static-squares .s2 { width: 100px; height: 100px; top: 30%; left: 80%; transform: rotate(-26deg); background-position: -200px 0; }
+.static-squares .s3 { width: 100px; height: 100px; top: 5%; left: 40%; transform: rotate(20deg); background-position: -100px 0; }
+.static-squares .s4 { width: 100px; height: 100px; top: 60%; left: 10%; transform: rotate(-10deg); background-position: 0 -100px; }
+.static-squares .s5 { width: 100px; height: 100px; top: 85%; left: 76%; transform: rotate(25deg); background-position: -200px -100px; }
+.static-squares .s6 { width: 100px; height: 100px; top: 35%; left: 12%; transform: rotate(20deg); background-position: 0 -200px;}
+.static-squares .s7 { width: 100px; height: 100px; top: 83%; left: 15%; transform: rotate(-20deg); background-position: -100px -200px;}
+.static-squares .s8 { width: 100px; height: 100px; top: 85%; left: 47%; transform: rotate(25deg); background-position: -200px -200px; }
+.static-squares .s9 { width: 100px; height: 100px; top: 55%; left: 85%; transform: rotate(-22deg); background-position: -100px -100px; }
+.static-squares .s10 { width: 100px; height: 100px; top: 5%; left: 75%; transform: rotate(10deg); background-position: -50px -50px; } 

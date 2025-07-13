@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+   background-color: lightblue;; /* preto */
+  /* color: #00aaff;  */
+}
+
+header {
+  background: #00aaff; /* azul claro */
+  color: #000;
+  padding: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.square, .piece {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+.square {
+  background: #111;
+  border: 1px solid #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.piece-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.piece {
+  background: #005577;
+  border: 1px solid #00aaff;
+  background-image: url("../imag/a4a93a88-56f8-4270-b3fe-f01554fb6df7.jpeg");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+button {
+    background: #00aaff;
+    color: gray;
+    border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+#playersList li {
+  background: #111;
+  border: 1px solid #00aaff;
+  color: #00aaff;
+}

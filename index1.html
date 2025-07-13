@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quebra cabeça</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+  <header>
+    <h1>🔨 Quebrando a cabeça do professor</h1>
+  </header>
+
+  <div id="register-screen">
+    <h2>Digite seu nome para começar</h2>
+    <input type="text" id="playerName" placeholder="Seu nome">
+    <button id="startButton">Começar</button>
+  </div>
+
+  <div id="game-screen" style="display: none;">
+    <div id="board"></div>
+    <div class="piece-container" id="pieceContainer"></div>
+    <button id="finishButton" style="display: none;">Finalizar jogo</button>
+  </div>
+
+  <div id="end-screen" style="display: none;">
+    <h2>Bom jogo!!</h2>
+    <p id="finalTime"></p>
+    <h3>Ranking:</h3>
+    <ul id="playersList"></ul>
+    <button id="resetButton">Limpar histórico</button>
+    <canvas id="confettiCanvas"></canvas>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
